@@ -1,0 +1,367 @@
+/**/
+.gradient--0 {
+  --gradient-start: #6DE195;
+  --gradient-end: #C4E759;
+}
+
+.gradient--1 {
+  --gradient-start: #41C7AF;
+  --gradient-end: #54E38E;
+}
+
+.gradient--2 {
+  --gradient-start: #99E5A2;
+  --gradient-end: #D4FC78;
+}
+
+.gradient--3 {
+  --gradient-start: #ABC7FF;
+  --gradient-end: #C1E3FF;
+}
+
+.gradient--4 {
+  --gradient-start: #6CACFF;
+  --gradient-end: #8DEBFF;
+}
+
+.gradient--5 {
+  --gradient-start: #5583EE;
+  --gradient-end: #41D8DD;
+}
+
+.gradient--6 {
+  --gradient-start: #A16BFE;
+  --gradient-end: #DEB0DF;
+}
+
+.gradient--7 {
+  --gradient-start: #D279EE;
+  --gradient-end: #F8C390;
+}
+
+.gradient--8 {
+  --gradient-start: #F78FAD;
+  --gradient-end: #FDEB82;
+}
+
+.gradient--9 {
+  --gradient-start: #BC3D2F;
+  --gradient-end: #A16BFE;
+}
+
+.gradient--10 {
+  --gradient-start: #A43AB2;
+  --gradient-end: #E13680;
+}
+
+.gradient--11 {
+  --gradient-start: #9D2E7D;
+  --gradient-end: #E16E93;
+}
+
+.gradient--12 {
+  --gradient-start: #F5CCF6;
+  --gradient-end: #F1EEF9;
+}
+
+.gradient--13 {
+  --gradient-start: #F0EFF0;
+  --gradient-end: #FAF8F9;
+}
+
+.gradient--14 {
+  --gradient-start: #121317;
+  --gradient-end: #323B42;
+  color: white;
+}
+
+.gradient {
+  display: inline-block;
+  background: linear-gradient(33deg, var(--gradient-start), var(--gradient-end));
+  border-radius: 20px;
+}
+
+/* ******************************************************************************************** */
+.gradient--15 {
+  --gradient-start: #85C9C8;
+  --gradient-end: #D4FEE6;
+  color: #000000 !important;
+}
+
+.gradient--16 {
+  --gradient-start: #C1EBE1;
+  --gradient-end: #93B4AC;
+}
+
+.gradient--17 {
+  background: -webkit-radial-gradient(top left, ellipse, #FDE152 0%, transparent), linear-gradient(to bottom, #FA715F, #FA715F 60%, #DB1174, #9B4CA7);
+}
+
+.gradient--18 {
+  --gradient-start: #556270;
+  --gradient-end: #C44D58;
+}
+
+.gradient--19 {
+  --gradient-start: #036564;
+  --gradient-end: #033649;
+}
+
+.gradient--20 {
+  background-image: url('1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+}
+
+/* ******************************************************************************************** */
+.datepicker-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(180, 174, 174) rgba(63, 60, 60, 0.05);
+  transition:all ease 1s; 
+  opacity:1;
+  }
+.datepicker-wrapper .d-none {
+  opacity: 0;
+}
+.datepicker-wrapper::-webkit-scrollbar {
+  width: 2px;
+}
+
+.datepicker-wrapper::-webkit-scrollbar-track {
+  background: rgba(209, 202, 202, 0.05);
+}
+
+.datepicker-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(105, 101, 101, 0.2);
+  border-radius: 3px;
+}
+
+.datepicker-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(105, 101, 101, 0.3);
+}
+
+.datepicker-wrapper {
+  position: relative;
+  display: inline-block;
+  direction: rtl;
+  box-shadow: 0 5px 17px rgba(0, 0, 0, 0.3);
+}
+
+.datepicker {
+  position: fixed;
+  border-radius: 12px;
+  padding: 0px;
+  width: 300px;
+  height: 380px;
+  display: block;
+  z-index: 1000;
+}
+
+.datepicker-years, .datepicker-months {
+  border-radius: 12px;
+  padding: 0px;
+  width: 100%;
+  height: 344px;
+  z-index: 1001;
+  top: 110%;
+  left: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 767.9px) {
+  .datepicker {
+    left: 50% !important;
+    bottom: 0 !important;
+    transform: translateX(-50%) !important;
+    border: 0.5px solid #b59d9d;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .p_left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .datepicker {
+    position: fixed;
+    border-radius: 4px 4px 0 0;
+    bottom: 0 !important;
+    /* max-width: 100%;
+    min-width: 400px; */
+    top: unset !important;
+    transform: translateX(-50%) !important;
+    width: 95%;
+    border: 0.5px solid #b59d9d;
+  }
+
+  .theme .datepicker-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+
+  ._backdrop {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, .3);
+
+  }
+}
+
+.datepicker-toolbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.datepicker-toolbar a {
+  border-radius: 50%;
+  border: none;
+  line-height: 1rem;
+  cursor: pointer;
+  font-size: small;
+  padding: 6px;
+  border-radius: 50px 50px;
+}
+
+.datepicker-toolbar a:hover {
+  background-color: gray;
+}
+
+.datepicker-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-weight: bold;
+  padding: 7px 10px;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.datepicker-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  padding: 10px;
+}
+
+.datepicker-years .datepicker-grid {
+  grid-template-columns: repeat(4, 1fr);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.datepicker-months .datepicker-grid {
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+align-items: center;
+}
+
+.datepicker-grid div {
+  position: relative;
+  cursor: pointer;
+  padding: 6px 5px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.datepicker-grid span {
+  text-align: center;
+  cursor: default;
+  pointer-events: none;
+  padding: 0px;
+}
+
+.datepicker-grid div:hover {
+  background: #f0f0f0 !important;
+  color: #352828 !important;
+}
+
+.theme {
+  padding: 3px;
+  /* height: 100%; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.theme .datepicker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow-y: auto;
+  height: 320px;
+  margin: 0 auto;
+
+}
+
+.theme .datepicker-grid div {
+  cursor: default;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.selected {
+  color: white !important;
+  background: #01a017 !important;
+}
+
+.today {
+  color: #fff !important;
+  background-color: #000 !important;
+  border: 1px solid;
+
+}
+
+.disable {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.holiday {
+  background-color: #f44336;
+  color: white;
+}
+
+.btns {
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+  line-height: 1rem;
+  cursor: pointer;
+  font-size: large;
+  background-color: transparent;
+  color: inherit;
+}
+
+.btns:hover {
+  border: 1px solid;
+}
+
+.miladi_el {
+  font-size: 0.65rem;
+  position: absolute;
+  top: 25px;
+  left: 11px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+._backdrop {
+  z-index: 999;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+

@@ -1,0 +1,94 @@
+@media (min-width: 768px) {
+    .p_right {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 300px;
+        border-radius: 0px 5px 5px 0px !important;
+        z-index: 1000;
+    }
+
+    .p_left {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 200px;
+        height: 100%;
+        /* background-color: #3aadaa;
+        border-radius: 5px 0px 0px 5px !important; */
+        z-index: 1000;
+        display: block;
+        color: white;
+    }
+
+    /* #2e8a87 */
+    .datepicker-wrapper {
+        position: absolute !important;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 380px;
+        top: 100px;
+        /* border: 1px solid; */
+        z-index: 1000;
+    }
+
+    .datepicker {
+        border-radius: 0px 5px 5px 0px !important;
+        width: 400px;
+
+
+    }
+
+    .weekLg {
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        background-color: #298c88 !important;
+        align-content: center;
+        color: white;
+        font-size: 2rem;
+        font-weight: 900;
+        border-radius: 5px 0px 0px 0px;
+    }
+
+    .ndLg {
+        position: relative;
+        width: 100%;
+        height: 320px;
+        background-color: #3aadaa;
+        border-radius: 0px 0px 0px 5px;
+        display: block;
+        text-align: center;
+    }
+
+    .dayLg {
+        position: absolute;
+        width: 100%;
+        height: 120px;
+        bottom: 161px;
+        align-content: end;
+        font-size: 6rem;
+        font-weight: 900;
+    }
+
+    .monthLg {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        bottom: 120px;
+        align-content: center;
+        font-size: 2rem;
+    }
+
+    .yearLg {
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        bottom: 0px;
+        align-content: center;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+}

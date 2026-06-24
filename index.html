@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-lg.css">
+    <style>
+        @font-face {
+            font-family: Shabnam;
+            src: url(font/Shabnam.ttf) format("truetype");
+            font-weight: 400
+        }
+
+        body {
+            font-family: 'Shabnam', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="dateInput" data-dpr="1" readonly placeholder="کلیک کنید" />
+    <input type="text" id="1111" data-dpr="1" value="1367/7/22" />
+    <input type="date" id="" />
+
+
+    <script src="converter.js"></script>
+    <script src="date.js"></script>
+    <script>
+        //startWatch('data-dpr');
+
+
+        /* ********************************************* EVENT LISTENERS ****************************************** */
+        // input.addEventListener("click", () => {
+        //     datepicker.style.display = "block";
+        // });
+
+        const jdpInputs = document.querySelectorAll(`input[data-dpr='1']`);
+        if (jdpInputs.length > 0) {
+            jdpInputs.forEach((input) => {
+                input.addEventListener('click', (e) => {
+                    input.setAttribute("readonly","true");
+                    //renderCalendar(currentDate);
+                    startWatch(input);
+                    //datepicker.style.display = "block";
+
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
